@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="css/signupstyle.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+<script>
+  function validateForm() {
+    var x = document.forms["myForm"]["name"].value;
+    var y = document.forms["myForm"]["number"].value;
+    var z = document.forms["myForm"]["email"].value;
+    var p1 = document.forms["myForm"]["psw"].value;
+    var p2 = document.forms["myForm"]["psw_repeat"].value;
+
+    var letters = /^[A-Za-z]+$/;
+    if (x.match(letters)) {
+
+      {
+        if (x.length >= 2) {
+          if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(z)) {
+            if (isNaN(y)) {
+              alert("Input Number Only!");
+              return false;
+            }
+            else {
+              if (p1.length >= 8) {
+                if (p1 != p2) {
+                  alert("Password did not match! Please try Again!");
+                  return false;
+                }
+              }
+              else {
+                alert("Password must be greater that 8 characters!");
+                return false;
+              }
+
+            }
+          }
+          else {
+            alert("You have entered an invalid email address!");
+            return false;
+          }
+        }
+        else {
+          alert("Name must contain at least 2 words");
+          return false;
+        }
+      }
+
+    }
+    else {
+      alert("Name can contain a-z or A-Z");
+      return false;
+    }
+
+    /* if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(z))
+     {
+       if(isNaN(y))
+       {
+      alert("Input Number Only!");
+    return false;
+  }
+  else
+       {
+         if (p1 != p2)
+         {
+      alert("Password did not match! Please try Again!");
+    return false;
+  }
+  else
+         {
+
+    }
+
+    }
+  }
+  else
+     {
+      alert("You have entered an invalid email address!");
+       return false;      }*/
+
+
+
+  }
+</script>
+
+
+<body>
+
+
+
+
+
+  <div class="sbg_img">
+
+    <nav class="navOpacity">
+      <div id="opac">
+
+        <ul>
+          <li>
+            <a class="logo" href="Home.php"></a>
+          </li>
+          <li>
+            <a href="#" id="help">Help</a>
+            <ul>
+              <li><a href="faq.html" class="hlp">FAQ</a><br>
+                <hr>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="infoEmail">
+
+    </div>
+    <form name="myForm" action="register.php" onsubmit="return validateForm()" method="post">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <br>
+        <p>Please fill in this form to create an account.</p>
+        <hr><br>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Username" name="name" required>
+
+        <label for="number"><b>Phone Number</b></label>
+        <input type="text" placeholder="Enter Phone Number" name="number" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" id="idEmail" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw_repeat" required>
+
+
+        <div class="clearfix">
+          <a style="text-decoration:none" href="Home.php">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button></a>
+            <button type="submit" class="signupbtn" name="signBtn">Sign Up</button>
+        </div>
+      </div>
+    </form>
+    <script type="text/javascript" src="js/emailValidateAjax.js"></script>
+
+  </div>
+
+</body>
+
+</html>

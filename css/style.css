@@ -1,0 +1,475 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.navOpacity
+{
+	width: 100%;
+	height: 60px;
+	background: grey;
+	background: rgba(0,0,0,0.2);
+	border: none;
+
+}
+body
+{
+		height:100%;
+}
+html
+{
+		height:100%;
+}
+
+ul li 
+{
+	display: block;
+	list-style: none;
+	display: inline-block;
+	float: left;	
+}
+ul li a 
+{
+	display: block;
+	text-decoration-line: none;
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+	padding: 10px 40px;
+}
+ul li a:hover
+{
+	color: red;
+}
+ul li ul li
+{
+	text-align: center;
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	color: black;
+	max-width: 150px;
+	display: none;
+	
+}
+
+.hlp{color: black;}
+
+ul li:hover ul li
+{
+	display: block;
+	background-color: white;
+}
+
+#logo
+{
+	text-align: left;
+	padding: left;
+}
+
+#search
+{
+	
+	padding-left: 330px;
+	float: left;
+}
+
+.logo
+{
+	background-image: url(../images/TF4.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 1px;
+	margin-left: 20px;
+	height: 40px;
+	width: 120px;
+    background-size: 115px 60px;
+ 	position: relative;
+
+}
+
+
+
+#foot
+{
+	color: white;
+	background-color: black;
+	position: relative;
+	top: 100px;
+	height: 400px;
+	width: 100%;
+}
+
+table
+{
+	text-align: center;
+	height: 200px;
+	width: 900px;
+}
+th
+{
+	font-weight: bold;
+
+}
+td a 
+{
+	text-decoration-line: none;
+	color: white;
+
+}
+
+td a:hover
+{
+	color: red;
+}
+
+#social
+{
+
+	position: absolute;
+	top: 50px;
+	left: 950px;
+	height: 200px;
+	
+}
+
+
+#last
+{
+	position: absolute;
+	top: 230px;
+	height: 150px;
+	text-align: center;
+	padding-left: 600px;
+}
+a
+{
+	text-decoration-line: none;
+	color: white;
+}
+a:hover
+{
+	color: red;
+}
+
+ 
+#signup
+{color: blue;}
+#signup:hover {color: red;}
+.headline
+{
+	margin: 0;
+	max-height: 70px;
+	max-width: 800px;
+	color:white;
+	padding: 180px 20px;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+
+}
+.destination
+{	
+	margin: 0;
+	color:white;
+	max-width: 400px;
+   	position: relative;
+ 	left: 840px;
+  	bottom:  280px;
+  	text-shadow: black;
+	font-family: Comic Sans MS; 
+	font-weight: bold;
+	
+}
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.srchButton
+{
+	background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.flowImg
+{
+	background-image: url(../images/flow.png);
+	max-height: 200px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+}
+.flowDescription
+{
+	margin: 0;
+	color:black;
+	
+   	position: relative;
+ 	text-align: center;
+  	
+  	text-shadow: black;
+	font-family: Comic Sans MS; 
+	font-weight: bold;
+	
+}
+.bg-img
+{
+	background-image: url(../images/Back.jpg);
+	min-height: 580px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+
+}
+.bg-Bksylhet
+{
+	background-image: url(../images/sylhet.jpg);
+	min-height: 580px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+
+}
+.bg-Bksajek
+{
+	background-image: url(../images/sajek.jpg);
+	min-height: 580px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+
+}
+.bg-Bkkuakata
+{
+	background-image: url(../images/kuakata.jpg);
+	min-height: 580px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+
+}
+.bg-Bkbandarban
+{
+	background-image: url(../images/bandarban.jpg);
+	min-height: 580px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+
+}
+.bg-Bkcoxbaxar
+{
+	background-image: url(../images/coxBazar.jpg);
+	min-height: 580px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+
+}
+.bg-Bksundarban
+{
+	background-image: url(../images/sundarban.jpg);
+	min-height: 580px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+
+}
+.tableImg
+{
+	text-align: center;
+	min-height: 600px;
+	min-width: 1100px;
+	border: 1px;
+	align-content: center;
+	padding-left: 50px;
+}
+
+#bg-CoxsBazar
+{
+	background-image: url(../images/coxBazar.jpg);
+	background-repeat: no-repeat;
+    background-size: 400px 200px;
+ 	position: relative;
+ 	text-align: center;
+ 	font-family: Comic Sans MS; 
+	font-weight: bold;
+	color: white;
+	min-width: 200px;
+	
+}
+#bg-sundarbans
+{
+	background-image: url(../images/sundarbans.jpg);
+	background-repeat: no-repeat;
+  	background-size: 400px 200px;
+ 	position: relative;
+ 	text-align: center;
+ 	font-family: Comic Sans MS; 
+	font-weight: bold;
+	color: white;
+	left: 120px;
+	min-width: 200px;
+	
+}
+#bg-kuakata
+{
+	background-image: url(../images/kuakata.jpg);
+	background-repeat: no-repeat;
+  	background-size: 500px 200px;
+ 	position: relative;
+ 	text-align: center;
+ 	font-family: Comic Sans MS; 
+	font-weight: bold;
+	color: white;
+	left: 200px;
+	min-width: 200px;
+	
+}
+
+#bg-bandarban
+{
+	background-image: url(../images/bandarban.jpg);
+	background-repeat: no-repeat;
+    background-size: 400px 200px;
+ 	position: relative;
+ 	text-align: center;
+ 	font-family: Comic Sans MS; 
+	font-weight: bold;
+	color: white;
+	min-width: 200px;
+	
+}
+#bg-sajek
+{
+	background-image: url(../images/sajek.jpg);
+	background-repeat: no-repeat;
+  	background-size: 400px 200px;
+ 	position: relative;
+ 	text-align: center;
+ 	font-family: Comic Sans MS; 
+	font-weight: bold;
+	color: white;
+	left: 120px;
+	min-width: 200px;
+	
+}
+#bg-sylhet
+{
+	background-image: url(../images/sylhet.jpg);
+	background-repeat: no-repeat;
+  	background-size: 500px 200px;
+ 	position: relative;
+ 	text-align: center;
+ 	font-family: Comic Sans MS; 
+	font-weight: bold;
+	color: white;
+	left: 200px;
+	min-width: 200px;
+	
+}
+
+img.media
+{
+	padding: 5px;
+	height: 40px;
+	width: 40px;
+}
+.PackageTableData
+{
+	text-align: center;
+ 	font-family: Comic Sans MS; 
+	font-weight: bold;
+	color: white;
+	min-width: 250px;
+	max-height:  10px;
+}
+#packagePlatinum
+{
+	text-align: center;
+ 	font-family: Comic Sans MS; 
+	font-weight: bold;
+	color: white;
+	min-width: 250px;
+	max-height:  10px;
+	background-color: #e5e4e2;
+}
+
+#packageGold
+{
+	text-align: center;
+ 	font-family: Comic Sans MS; 
+	font-weight: bold;
+	color: white;
+	min-width: 250px;
+	max-height:  10px;
+	background-color: gold;
+}
+#packageSilver
+{
+	text-align: center;
+ 	font-family: Comic Sans MS; 
+	font-weight: bold;
+	color: white;
+	min-width: 250px;
+	max-height:  10px;
+	background-color: silver;
+}
+.PackageTable
+{
+	padding-left: 100px;
+	min-width: 1300px;
+}
+.mySlides
+{
+	width: 100%;
+	height: 500px;
+}
+
+.demo
+{
+	height: 200px;
+	width: 300px;
+}
+.tr
+{
+	width: 200px;
+	height: 50px;
+}
+.td
+{
+	width: 150px;
+	text-align: left;
+	color: white;
+}
+
+.black
+{
+	color: black;
+}
+

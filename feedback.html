@@ -1,0 +1,53 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/feedbackstyle.css">
+</head>
+
+<body>
+	<div>
+
+		<nav class="navOpacity">
+			<div id="opac">
+
+				<ul>
+					<li>
+						<a class="logo" href="welcome.php"></a>
+					</li>
+					<li>
+						<a href="#" id="help">Help</a>
+						<ul>
+							<li><a href="faq.html" class="hlp">FAQ</a><br>
+								<hr>
+								<a href="feedback.html" class="hlp">Give Feedback</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<form action="feedbackInsrt.php" method="POST">
+
+			<h2>FEEDBACK</h2>
+			<h3>please provide your feedback</h3>
+			<h3>How do you rate your overall experience? </h3>
+
+			<div class="input">
+				Bad <input type="radio" name="popilarRadio" value="bad" required>
+
+				Avarage <input type="radio" name="popilarRadio" value="average">
+
+				Good <input type="radio" name="popilarRadio" value="good">
+				<br>
+
+				<textarea rows="5" cols="25" name="comment" required>
+						</textarea>
+				<br>
+
+				<input type="submit" value="Submit" name="submitBtn">
+			</div>
+		</form>
+
+</body>
+
+</html>

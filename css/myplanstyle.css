@@ -1,0 +1,250 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.navOpacity
+{
+	width: 100%;
+	height: 60px;
+	background: black;
+	background: rgba(0,0,0);
+
+}
+body
+{
+		height:100%;
+}
+html
+{
+		height:100%;
+}
+
+ul li 
+{
+	display: block;
+	list-style: none;
+	display: inline-block;
+	float: left;	
+}
+ul li a 
+{
+	display: block;
+	text-decoration-line: none;
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+	padding: 8px 40px;
+}
+ul li a:hover
+{
+	color: red;
+}
+ul li ul li
+{
+	text-align: center;
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	color: black;
+	max-width: 150px;
+	display: none;
+	
+}
+
+.logo
+{
+	background-image: url(../images/TF4.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 1px;
+	margin-left: 20px;
+	height: 40px;
+	width: 120px;
+    background-size: 115px 60px;
+ 	position: relative;
+
+}
+
+.hlp{color: white;}
+
+ul li:hover ul li
+{
+	display: block;
+	background-color: rgb(211,211,211);
+}
+
+#logo
+{
+	text-align: left;
+	padding: left;
+}
+#search
+{
+	
+	padding-left: 330px;
+	float: left;
+}
+#signup
+{color: blue;}
+#signup:hover {color: red;}
+
+#foot
+{
+	color: white;
+	background-color: black;
+	position: relative;
+	top: 00px;
+	height: 400px;
+	width: 100%;
+}
+
+
+table
+{
+	text-align: center;
+	height: 200px;
+	width: 900px;
+}
+th
+{
+	font-weight: bold;
+}
+td a 
+{
+	text-decoration-line: none;
+	color: white;
+
+}
+
+td a:hover
+{
+	color: red;
+}
+
+#social
+{
+	position: absolute;
+	top: 50px;
+	left: 950px;
+	height: 200px;
+	
+}
+
+
+#last
+{
+	position: absolute;
+	top: 230px;
+	height: 150px;
+	text-align: center;
+	padding-left: 600px;
+}
+a
+{
+	text-decoration-line: none;
+	color: white;
+}
+a:hover
+{
+	color: red;
+}
+img.media
+{
+	padding: 5px;
+	height: 40px;
+	width: 40px;
+}
+
+.h1
+{	
+	margin-left: 200px;
+	
+	font-family: Comic Sans MS; 
+	font-weight: bold;
+ 	color: white;
+}
+
+
+img.image
+{
+	width: 400px;
+	height: 200px;
+}
+h2
+{
+	
+	margin-left: 55px;
+	color: black;
+	font-family: Comic Sans MS; 
+	font-weight: bold;
+}
+h2:hover{color: red;}
+
+
+.srchButton
+{
+	background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.info
+{
+	margin-left: 200px;
+	width: 400px;
+	height: 500px;
+}
+.row
+{
+	width: 5px;
+
+}
+
+.col
+{
+	font-weight: bold;
+	font-family: arial;
+	text-align: left;
+	color: pink;
+}
+.place
+{
+	background-image: url(../images/Back.jpg);
+	height: 800px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+
+}
+
+h3
+{
+	margin-left: 200px;
+	color: pink;
+	font-family: arial;
+	font-weight: bold;
+}
+
+.pay
+{
+	height: 30px;
+	width: 150px;
+	margin-left: 200px;
+	color: black;
+	background-color: pink;
+	padding: 10px;
+	padding-bottom: 3px;
+	font-weight: bold;
+}

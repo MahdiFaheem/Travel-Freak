@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="css/forgotstyle.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script>
+        function validateForm() {
+
+            var p1 = document.forms["myForm"]["psw"].value;
+            var p2 = document.forms["myForm"]["psw_repeat"].value;
+
+            if (p1.length >= 8) {
+                if (p1 != p2) {
+                    alert("Password did not match! Please try Again!");
+                    return false;
+                }
+            }
+            else {
+                alert("Password must be greater that 8 characters!");
+                return false;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="sbg_img">
+        <nav class="navOpacity">
+            <div id="opac">
+                <ul>
+                    <li>
+                        <a class="logo" href="Home.php"></a>
+                    </li>
+                    <li>
+                        <a href="#" id="help">Help</a>
+                        <ul>
+                            <li>
+                                <a href="#" class="hlp">FAQ</a><br />
+                                <hr />
+                                <a href="#" class="hlp">Give Feedback</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="infoEmail">
+
+        </div>
+        <form name="myForm" action="changePassForgot.php" onsubmit="return validateForm()" method="post">
+            <div class="container">
+                <h1>Forgot Password</h1>
+                <br>
+                <p>Please fill in this form to change password.</p>
+                <hr><br>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" id="idEmail" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw_repeat" required>
+
+
+                <div class="clearfix">
+                        <button type="submit" class="confirmbtn" name="changePassBtn">Change Password</button>
+                        <a style="text-decoration:none" href="Home.php">
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="cancelbtn">Cancel</button></a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/emailValidateForgot.js"></script>
+    </div>
+</body>
+
+</html>

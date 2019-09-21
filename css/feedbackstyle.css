@@ -1,0 +1,124 @@
+/**
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.bg-img
+{
+	
+	width: 100%;
+	height: 100%;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+ 	color:white;
+  	
+	font-weight: bold;
+ 	text-align: center;
+  	text-shadow: black;
+	font-family: Comic Sans MS; 
+
+}*/
+
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/Back.jpg);
+	-webkit-background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: tahoma, sans-serif;
+	color: white;
+}
+h2{
+	text-align: center;
+}
+h3{
+	text-align: center;
+}
+.input{
+	text-align: center;
+}
+
+.navOpacity
+{
+  width: 100%;
+  height: 40px;
+  background: grey;
+  background: rgba(0,0,0,0.2);
+
+}
+
+ul li 
+{
+  display: block;
+  list-style: none;
+  display: inline-block;
+  float: left;  
+}
+ul li a 
+{
+  display: block;
+  text-decoration-line: none;
+  font-size: 14px;
+  font-family: arial;
+  font-weight: bold;
+  color: white;
+  padding: 10px 40px;
+}
+ul li a:hover
+{
+  color: red;
+}
+ul li ul li
+{
+  text-align: center;
+  font-size: 14px;
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+  max-width: 150px;
+  display: none;
+  
+}
+
+.hlp{color: black;}
+
+ul li:hover ul li
+{
+	display: block;
+	background-color: white;
+}
+
+
+.logo
+{
+	background-image: url(../images/TF4.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 1px;
+	margin-left: 20px;
+	height: 40px;
+	width: 120px;
+    background-size: 115px 60px;
+ 	position: relative;
+
+}
+
+form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 400px;
+	height: 450px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,0.5);
+	padding: 40px;
+
+}

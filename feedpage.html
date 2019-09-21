@@ -1,0 +1,44 @@
+<?php
+            $conn = mysqli_connect("localhost", "root", "", "travel");
+            // Check connection
+            if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+            }
+
+            $sql = "SELECT name, fbackId, rating,comment,personId FROM feedback";
+            
+            $result = $conn->query($sql);
+            
+            if ($result->num_rows > 0) {
+            // output data of each row
+          
+            while($row = $result->fetch_assoc()) {
+            echo "<tr><td>" . $row["personID"]. "</td><td>" . $row["name"] . "</td><td>"
+            . $row["comment"]. "</td><td>" . $row["rating"] . "</td><td>" . $row["fbackId"] . "</td></tr>";
+            }
+            echo "</table>";
+            } 
+            
+            else { echo "0 results"; }
+            $conn->close();
+?>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/admin.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>FEEDBACK</th>
+            <th>RATING</th>
+            <th>FEEDBACK ID</th>
+        </tr>
+
+    </table>
+</body>
+
+</html>

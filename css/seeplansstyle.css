@@ -1,0 +1,270 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.navOpacity
+{
+	width: 100%;
+	height: 60px;
+	background: grey;
+	background: rgba(0,0,0,0.2);
+	
+
+}
+body
+{
+		height:100%;
+}
+html
+{
+		height:100%;
+}
+
+#logo
+{
+	text-align: left;
+	padding: left;
+
+}
+#search
+{
+	
+	padding-left: 330px;
+	float: left;
+}
+
+.logo
+{
+	background-image: url(../images/TF4.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 1px;
+	margin-left: 20px;
+	height: 40px;
+	width: 120px;
+    background-size: 115px 60px;
+ 	position: relative;
+
+}
+.srchButton
+{
+	background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 0px 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+ul li 
+{
+	display: block;
+	list-style: none;
+	display: inline-block;
+	float: left;	
+}
+ul li a 
+{
+	display: block;
+	text-decoration-line: none;
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+	padding: 10px 40px;
+	
+	
+}
+ul li a:hover
+{
+	color: red;
+}
+ul li ul li
+{
+	text-align: center;
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	color: black;
+	max-width: 150px;
+	display: none;
+	
+	
+}
+
+.hlp{color: black;}
+
+ul li:hover ul li
+{
+	display: block;
+	background-color: white;
+}
+
+a
+{
+	text-decoration-line: none;
+	color: white;
+}
+
+a:hover
+{
+	color: red;
+
+}
+
+.bg-img
+{
+	background-image: url(../images/image.jpg);
+	height: 580px;
+	background-position: center;
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+
+}
+
+.txt
+{
+	margin: 0;
+	text-align: center;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	font-size: 25px;
+
+
+}
+
+
+/*.inani
+{
+	background-image: url(inanibeach.jpg);
+	background-repeat: no-repeat;
+	margin-left: 200px;
+	height: 200px;
+	width: 400px;
+    background-size: 400px 200px;
+ 	position: relative;
+}*/
+
+.dname
+{text-align: left;
+	margin: 0;
+	padding-left: 200px;
+	font-size: 30px;
+	font-weight: bold;
+	max-width: 1200px;
+	font-family: Comic Sans MS;
+	color: darkblue;
+
+}
+
+.dname h3
+{
+	text-align: left;
+	margin: 0;
+	padding-left: 200px;
+	font-size: 20px;
+	font-weight: normal;
+	color: black;
+}
+
+img.pl
+{
+	padding: 20px;
+	height: 200px;
+	width: 200px;
+}
+
+.confirm{
+ background-color: #4CAF50;
+  color: white;
+  padding: 24px 20px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  width: 300px;
+  margin-left: 500px;
+}
+
+img.media
+{
+	padding: 5px;
+	height: 40px;
+	width: 40px;
+}
+#foot
+{
+	color: white;
+	background-color: black;
+	position: relative;
+	top: 100px;
+	height: 400px;
+	width: 100%;
+}
+
+table
+{
+	text-align: center;
+	height: 200px;
+	width: 900px;
+}
+th
+{
+	font-weight: bold;
+}
+td a 
+{
+	text-decoration-line: none;
+	color: white;
+
+}
+
+td a:hover
+{
+	color: red;
+}
+
+.flowDescription
+{
+	margin: 0;
+	color:black;
+	
+   	position: relative;
+ 	text-align: center;
+ 	left: 680px;
+  	
+  	text-shadow: black;
+	font-family: Comic Sans MS; 
+	font-weight: bold;
+	
+}
+
+#social
+{
+	position: absolute;
+	top: 50px;
+	left: 950px;
+	height: 200px;
+	
+}
+#signup
+{color: blue;}
+#signup:hover {color: red;}
+
+
+#last
+{
+	position: absolute;
+	top: 230px;
+	height: 150px;
+	text-align: center;
+	padding-left: 600px;
+}
+
+

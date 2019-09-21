@@ -1,0 +1,197 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cox's Bazar</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+		<nav  class="navOpacity">
+				<div id="opac">
+	
+					<ul>
+						<li>
+							   <a class="logo" href="welcome.php"></a>
+						</li>
+						<li id="search">
+							<input type="text" name="searchbox">
+							<input type="submit" class="srchButton" name="press" value="Search">
+						</li>
+						
+						<li >
+							<a href="#">My Plan</a>
+						
+						</li>
+						<li>
+							<a href="#" id="Saved">Saved</a>
+						</li>
+						<li >
+							<a  href="logout.php">Logout</a>
+						</li>
+						<li>
+							<a href="#" id="help">Help</a>
+							
+						</li>
+					</ul>
+				</div>
+			</nav>
+	
+
+			<div>
+					<img class="mySlides" src="images/inanibeach.jpg" >
+					<img class="mySlides" src="images/cxs.jpg" >
+					<img class="mySlides" src="images/sangu.jpg">
+			</div>
+		
+			<script>
+					var myIndex = 0;
+					carousel();
+					
+					function carousel() {
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					  }
+					  myIndex++;
+					  if (myIndex > x.length) {myIndex = 1}    
+					  x[myIndex-1].style.display = "block";  
+					  setTimeout(carousel, 2000); // Change image every 2 seconds
+					}
+					</script>
+	
+	<div >
+			<br>
+			<h2 class="flowDescription" style="color: black">Book Your Hotel</h2>
+			
+		</div>
+	
+		<div class="flowDescription" style="color: black;text-align: left">
+			<br><br>
+			Your Package:
+			<select name="PackageCmb">
+				<option value="1">Platinum</option>
+				<option value="2">Gold</option>
+				<option value="3">Silver</option>
+				<option value="4">Manual</option>
+			</select>
+			<div class="flowDescription">
+				Choose Hotel:
+				<select name="HotelCmb">
+				</select> 
+				&nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp  &nbsp  &nbsp 
+				Select Rooms:
+				<select name="HotelRoomCmb">
+					</select> 
+					&nbsp  &nbsp &nbsp &nbsp
+				Quantity:
+				<select name="HotelRoomQuantityCmb">
+				</select>
+				<br>
+				<br>
+				<br>
+				<h3>Total Hotel Cost: </h3>
+				<br>
+				<br>
+				<hr>
+			</div>
+		</div>
+				
+			</select>
+		</div>
+	
+		<div >
+				<br>
+				<h2 class="flowDescription" style="color: black">Plan Your Meal</h2>
+				
+			</div>
+		
+			<div class="flowDescription" style="color: black;text-align: left">
+				<br><br>
+				
+				<div class="flowDescription">
+					Breakfast:
+					<select name="BreakfastCmb">
+					</select> 
+					 &nbsp  &nbsp  &nbsp &nbsp &nbsp  &nbsp  &nbsp 
+					Lunch:
+					<select name="LunchCmb">
+						</select> 
+						&nbsp  &nbsp &nbsp &nbsp
+					Dinner:
+					<select name="DinnerCmb">
+					</select>
+					<br>
+				<br>
+				<br>
+				<h3>Total Meal Cost: </h3>
+				<br>
+				<br>
+				<input type="submit" class="button" name="paymentBtn" value="Go To Payment" style="background: orange">
+				
+				</div>
+			</div>
+					
+				</select>
+			</div>
+	
+	<footer id="foot">
+			
+			<table >
+					<tr>
+						<th> Travel Freak</th>
+						<th> Browse</th>
+						<th> Help</th>
+						<th>Settings</th>
+						
+					</tr>
+					<tr>
+						<td><a href="#" id="about">About us</a></td>
+						<td><a href="#" id="plansByOther">Plans by other users</a></td>
+						<td><a href="#" id="faq">FAQ</a></td>
+						<td><a href="#" id="currency">Currency: &nbsp &nbsp Change</a></td>
+					</tr>
+					<tr>
+						<td><a href="#" id="partnership">Partner with us</a></td>
+						<td><a href="#" id="des">Destinations</a></td>
+						<td><a href="#" id="contact">Contact us</a></td>
+						<td><a href="#" id="about">Language: &nbsp &nbsp Change</a></td>
+					</tr>
+
+					<tr>
+						<td><a href="#" id="linkedin">Us on Linkedin</a></td>
+						<td><a href="#" id="credits">Credits</a></td>
+						<td><a href="#" id="privacy">Privacy Policy</a></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td><a href="#" id="cookie">Cookie policy</a></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td><a href="#" id="copyright">Copyright policy</a></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td><a href="#" id="terms">Terms of use</a></td>
+					</tr>
+
+			</table>
+			<hr>
+			<div id="social">
+				<a href="#" id="facebook"><img src="images/facebook.png" class="media"></a>
+				<a href="#" id="insta"><img src="images/instagram.png" class="media"></a>
+				<a href="#" id="tweeter"><img src="images/twitter.png" class="media"></a>
+				<a href="#" id="youtube"><img src="images/youtube.png" class="media"></a>
+			</div>
+			<div id="last">
+				Travel Freak-All rights reserved |<br> Powered by Chowdhury Shaheb
+			</div>	
+		</footer>
+</body>
+</html>
