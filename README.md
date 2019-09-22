@@ -1,2 +1,2 @@
 # Travel-Freak
-Travel planner for Bangladesh
+Travel planner website for the country Bangladesh.
